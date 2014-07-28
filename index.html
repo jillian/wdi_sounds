@@ -1,0 +1,97 @@
+<html>
+<head>
+  <title>WDI SOUNDS</title>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/soundmanager2.js"></script>
+  <script src="js/inline_player.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<!-- 
+  <h1>What you said?</h1> -->
+  <div id="container">
+  <ul class="graphic">
+    <div id="gerry">
+      <a href="sounds/gerry_bon.m4a">
+        <li>Gerry</li>
+      </a>
+    </div>
+
+    <div id="andrey">
+      <a href="sounds/andrey_ugly.m4a">
+        <li>Andrey</li>
+      </a>
+    </div>
+
+    <div id="george">
+      <a href="sounds/george.m4a">
+        <li>George</li>
+      </a>
+    </div>
+
+    <div id="alex">
+      <a href="sounds/alex_bundle.m4a">
+        <li>Alex</li>
+      </a>
+    </div>
+
+    <div id="GA">
+      <a href="#">
+        <li>
+          <img src="ga_logo.jpg" />
+        </li>
+      </a>
+    </div>
+
+    <div id="matt">
+      <a href="sounds/matt_wow.m4a">
+        <li>Matt</li>
+      </a>
+    </div>
+
+    <div id="michael">
+      <a href="sounds/michael_dont_care.m4a">
+        <li>Michael</li>
+      </a>
+    </div>
+
+    <div id="sri">
+      <a href="sounds/sri.m4a">
+        <li>Sri</li>
+      </a>
+    </div>
+
+    <div id="tim">
+      <a href="sounds/tim.m4a">
+        <li>Tim</li>
+      </a>
+    </div>
+    
+ </ul>
+ </div>
+<script type="text/javascript">
+  function sample(array) {
+    return array[Math.floor ( Math.random() * array.length )]
+  }
+
+  function random(e) {
+    var array = ["sounds/gerry_bon.m4a",
+    "sounds/andrey_ugly.m4a",
+    "sounds/george.m4a",
+    "sounds/alex_bundle.m4a",
+    "sounds/julien.m4a"];
+
+    var random = sample(array)
+    var link = $(e.currentTarget).children("a");
+
+    link.attr("href", random).trigger("click");
+  }
+
+  $(document).ready(function(){
+    $('#GA').on("click", random);
+  });
+</script>
+</body>
+</html>

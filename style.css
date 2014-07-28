@@ -1,0 +1,95 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+/*  background-image: url('cutcube.png');*/
+}
+
+#container {
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+}
+
+ul {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+ul li {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  color: white;
+  line-height: 200px;
+  text-align: center;
+  float: left;
+  margin: 20px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;   
+}
+
+ul li:hover {
+  background-color: black;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+}
+
+ul div {
+  z-index: 100;
+}
+
+ul div:hover {
+  /*background-color: rgba(0,0,0,0.3);
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;*/
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#GA img {
+  width: 100%;
+}
+
+#alex li {
+  background-color: #E8D30C;
+}
+
+#michael li {
+  background-color: #7FFF0D;
+}
+
+#matt li{
+  background-color: #1CD429;
+}
+
+#tim li {
+  background-color: #E80C7A;
+}
+
+#gerry li {
+  background-color: blue;
+}
+
+#george li {
+  background-color: #821EE8;
+}
+
+#andrey li {
+  background-color: #0DFFF2;
+}
+
+#sri li {
+  background-color: #2773E8;
+}
+
+li:hover {
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  opacity: 0.5;
+}
